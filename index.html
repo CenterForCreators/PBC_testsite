@@ -3082,7 +3082,7 @@ async function executePBCFaucetClaim(wallet) {
   try {
     // Call PBC faucet API endpoint to claim tokens
     // The faucet backend (controlled by PBC issuer) handles the actual token distribution
-    const response = await fetch('https://thepickleballcoin.com/api/faucet-claim', {
+    const response = await fetch('https://pickleballcoin.onrender.com/api/faucet-claim', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
