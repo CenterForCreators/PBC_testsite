@@ -1384,7 +1384,10 @@
     /* Fix 7th tech card spanning empty grid cells */
     .tech-card:last-child { grid-column: 1 / -1; }
   </style>
-  <script src="https://cdn.jsdelivr.net/npm/xumm@1.11.0/dist/browser.min.js"></script>
+  <script 
+  src="https://xumm.app/assets/cdn/xumm.min.js"
+  onload="window.xumm = new Xumm('bcead6b3-3bcf-486c-82a5-d9b8e1979337');">
+</script>
   <script src="https://unpkg.com/xrpl@4.0.0/dist/xrpl-latest-min.js"></script>
 </head>
 <body>
@@ -2922,8 +2925,7 @@
   </script>
 
 <script>
-  const xumm = new Xumm('bcead6b3-3bcf-486c-82a5-d9b8e1979337');
-window.xumm = xumm;
+ 
 const TRUSTLINE_URL = "https://xrpl.services/?issuer=rPr9RnhhM1B2ipRJ9iTCWuq9111mA6jMsM&currency=PBC&limit=9495.632298327975";
 const PBC_ISSUER = "rPr9RnhhM1B2ipRJ9iTCWuq9111mA6jMsM";
 const PBC_CURRENCY = "PBC";
